@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Personal\\C\u002B\u002B\\Masters Prep\\Module 1\\Student-Record-System\\StudentRecordSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DA409E1-8D7B-4244-A7C0-D18176E13F4D}|StudentRecordSystem.vcxproj|E:\\Personal\\C\u002B\u002B\\Masters Prep\\Module 1\\Student-Record-System\\StudentRecordSystem\\StudentRecordSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9DA409E1-8D7B-4244-A7C0-D18176E13F4D}|StudentRecordSystem.vcxproj|solutionrelative:StudentRecordSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentRecordSystem.cpp",
+              "DocumentMoniker": "E:\\Personal\\C\u002B\u002B\\Masters Prep\\Module 1\\Student-Record-System\\StudentRecordSystem\\StudentRecordSystem.cpp",
+              "RelativeDocumentMoniker": "StudentRecordSystem.cpp",
+              "ToolTip": "E:\\Personal\\C\u002B\u002B\\Masters Prep\\Module 1\\Student-Record-System\\StudentRecordSystem\\StudentRecordSystem.cpp",
+              "RelativeToolTip": "StudentRecordSystem.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-02T15:07:34.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

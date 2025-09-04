@@ -16,9 +16,8 @@ private:
 
     int inputSelection;
 
-
     void HomePage();
 
-    void Greeting();
+    void MainMenuPage();
 
 };

@@ -26,5 +26,8 @@
     <ClInclude Include="StudentRecordSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RecordManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

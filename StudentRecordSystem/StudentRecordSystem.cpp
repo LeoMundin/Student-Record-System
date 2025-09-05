@@ -3,6 +3,9 @@
 // Constructor.
 StudentRecordSystem::StudentRecordSystem() 
 {
+
+    // TODO : Instantiate Record Manager.
+
     // Launch Home Page
     HomePage();
 }

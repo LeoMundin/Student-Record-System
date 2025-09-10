@@ -1,30 +1,33 @@
 #pragma once
 
 #include <iostream>
+#include<fstream>
+#include "json.hpp"
 
 using namespace std;
-
+using json = nlohmann::json;
 
 class RecordManager
 {
 
 public:
 
-	RecordManager(string fileDirectory) 
+	struct studentRecord
 	{
-		FILEDIRECTORY = fileDirectory;
-	}
+		string name;
+		int numberID;
+		int rollID;
+		float mathsMark;
+	};
+
+	RecordManager(){} // Default Constructor
+	RecordManager(string fileDirectory);
+
 
 	/// <summary>
 	/// Takes a Name, ID number,Roll number and Course marks; Then creates and saves Record for thoes details
 	/// </summary>
-	void CreateRecord(string name, int numberID, int rollID, int mathScore, int englishScore) 
-	{
-
-		// Create Record
-
-		// Save Record To File Directory
-	}
+	void CreateRecord();
 
 	/// <summary>
 	/// Deletes a record from the File Directory
@@ -94,6 +97,9 @@ public:
 
 
 private:
+
+
+
 
 	string FILEDIRECTORY;
 

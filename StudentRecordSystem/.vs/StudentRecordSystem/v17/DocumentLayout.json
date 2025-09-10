@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{9DA409E1-8D7B-4244-A7C0-D18176E13F4D}|StudentRecordSystem.vcxproj|solutionrelative:RecordManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Leo\\OneDrive\\Documents\\Downloads\\json.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9DA409E1-8D7B-4244-A7C0-D18176E13F4D}|StudentRecordSystem.vcxproj|E:\\Personal\\C\u002B\u002B\\Masters Prep\\Module 1\\Student-Record-System\\StudentRecordSystem\\StudentRecordSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9DA409E1-8D7B-4244-A7C0-D18176E13F4D}|StudentRecordSystem.vcxproj|solutionrelative:StudentRecordSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -26,8 +29,18 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "json.hpp",
+              "DocumentMoniker": "C:\\Users\\Leo\\OneDrive\\Documents\\Downloads\\json.hpp",
+              "ToolTip": "C:\\Users\\Leo\\OneDrive\\Documents\\Downloads\\json.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-10T15:03:31.524Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,14 +49,14 @@
               "RelativeDocumentMoniker": "RecordManager.h",
               "ToolTip": "E:\\Personal\\C\u002B\u002B\\Masters Prep\\Module 1\\Student-Record-System\\StudentRecordSystem\\RecordManager.h",
               "RelativeToolTip": "RecordManager.h",
-              "ViewState": "AgIAABcAAAAAAAAAAAAkwAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-05T12:47:16.846Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StudentRecordSystem.h",
               "DocumentMoniker": "E:\\Personal\\C\u002B\u002B\\Masters Prep\\Module 1\\Student-Record-System\\StudentRecordSystem\\StudentRecordSystem.h",
               "RelativeDocumentMoniker": "StudentRecordSystem.h",
@@ -51,12 +64,11 @@
               "RelativeToolTip": "StudentRecordSystem.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-02T16:08:49.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-02T16:08:49.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Main.cpp",
               "DocumentMoniker": "E:\\Personal\\C\u002B\u002B\\Masters Prep\\Module 1\\Student-Record-System\\StudentRecordSystem\\Main.cpp",
               "RelativeDocumentMoniker": "Main.cpp",
@@ -64,12 +76,11 @@
               "RelativeToolTip": "Main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-02T16:48:03.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-02T16:48:03.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "StudentRecordSystem.cpp",
               "DocumentMoniker": "E:\\Personal\\C\u002B\u002B\\Masters Prep\\Module 1\\Student-Record-System\\StudentRecordSystem\\StudentRecordSystem.cpp",
               "RelativeDocumentMoniker": "StudentRecordSystem.cpp",
@@ -77,8 +88,7 @@
               "RelativeToolTip": "StudentRecordSystem.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-02T15:07:34.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-02T15:07:34.055Z"
             },
             {
               "$type": "Bookmark",

@@ -36,14 +36,7 @@ public:
 	/// Deletes a record from the File Directory
 	/// </summary>
 	/// <param name="rollID">The ID of the record to be deleted</param>
-	void DeleteRecord(int rollID)
-	{
-
-		// GetRecordFromDirectory(int rollID) 
-
-		// Delete Entry
-
-	}
+	void DeleteRecord(int rollID);
 
 	/// <summary>
 	/// Takes a roll ID, searches for it, then allows alterations of said entry

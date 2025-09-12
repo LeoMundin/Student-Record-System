@@ -88,7 +88,6 @@ void RecordManager::CreateRecord()
 
 }
 
-
 json RecordManager::GetRecord(int rollID) 
 {
 
@@ -113,4 +112,44 @@ json RecordManager::GetRecord(int rollID)
 
 	json noRecordFoundJSON = { "No Such Record" };
 	return noRecordFoundJSON;
+}
+
+void RecordManager::DeleteRecord(int rollID)
+{
+
+
+	// Read Directory.
+	ifstream readRecordFileStore(FILEDIRECTORY);
+	// Convert Directory To JSON And Close Directory.
+	json recordFileStoreJSON;
+	readRecordFileStore >> recordFileStoreJSON;
+	readRecordFileStore.close();
+
+
+
+	int i = 0;
+	for (json record : recordFileStoreJSON)
+	{
+
+		if (record["rollID"] == rollID)
+		{
+
+			// Erase the report that was found
+			recordFileStoreJSON.erase(i);
+
+			// Write The Directory Back To Its File.
+			ofstream writeRecordFileStore(FILEDIRECTORY);
+			writeRecordFileStore << recordFileStoreJSON;
+			writeRecordFileStore.close();
+
+			return;
+
+		}
+
+		i++;
+
+	}
+
+
+
 }

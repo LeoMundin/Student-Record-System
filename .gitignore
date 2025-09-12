@@ -2,7 +2,7 @@
 *.d
 
 # Visual Studio cache and temp files
-.vs/
+*.vs/
 *.ipch
 *.VC.db
 *.VC.opendb

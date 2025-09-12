@@ -133,6 +133,9 @@
     <ClInclude Include="RecordManager.h" />
     <ClInclude Include="StudentRecordSystem.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Records.json" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

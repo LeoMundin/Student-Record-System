@@ -1,6 +1,2 @@
-﻿  Main.cpp
-  RecordManager.cpp
-  StudentRecordSystem.cpp
-  Generating Code...
-E:\Personal\C++\Masters Prep\Module 1\Student-Record-System\StudentRecordSystem\StudentRecordSystem.cpp(137,1): warning C4717: 'StudentRecordSystem::MainMenuPage': recursive on all control paths, function will cause runtime stack overflow
+﻿  StudentRecordSystem.cpp
   StudentRecordSystem.vcxproj -> E:\Personal\C++\Masters Prep\Module 1\Student-Record-System\StudentRecordSystem\x64\Debug\StudentRecordSystem.exe

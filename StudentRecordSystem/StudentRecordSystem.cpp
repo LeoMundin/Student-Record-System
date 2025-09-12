@@ -44,6 +44,7 @@ void StudentRecordSystem::HomePage()
 
     case 2:
         cout << "GoodBye!" << endl;
+        return;
         break;
 
     default:
@@ -69,11 +70,11 @@ void StudentRecordSystem::MainMenuPage()
 
     // Load Page Options.
     cout << "1.Create Report"    << endl;
-    cout << "2.Modifiy Report"   << endl;
+    cout << "2.Modifiy Report <- Coming soon!"   << endl;
     cout << "3.Delete Report"    << endl;
     cout << "4.View Report"      << endl;
-    cout << "5.View All Reports" << endl;
-    cout << "6.View Results"     << endl;
+    cout << "5.View All Reports <- Coming soon!" << endl;
+    cout << "6.View Results <- Coming soon!"     << endl;
     cout << "7.Back"             << "\n\n";
 
     cin >> inputSelection;
@@ -82,6 +83,7 @@ void StudentRecordSystem::MainMenuPage()
     system("cls");
 
 
+    int reportRollID;
     // Process Input.
     switch (inputSelection)
     {
@@ -96,12 +98,14 @@ void StudentRecordSystem::MainMenuPage()
         break;
 
     case 3:
+
+        cout << "Report Roll ID Number : " << endl;
+        cin >> reportRollID;
         cout << "Deleting Report..." << endl;
+        recordManager.DeleteRecord(reportRollID);
         break;
 
     case 4:
-
-        int reportRollID;
 
         cout << "Report Roll ID Number : " << endl;
         cin >> reportRollID;
@@ -123,6 +127,7 @@ void StudentRecordSystem::MainMenuPage()
     case 7:
         cout << "Back To Menu." << endl;
         HomePage();
+        return;
         break;
 
     default:

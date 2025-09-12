@@ -1,6 +1,13 @@
 # Prerequisites
 *.d
 
+# Visual Studio cache and temp files
+.vs/
+*.ipch
+*.VC.db
+*.VC.opendb
+
+
 # Compiled Object files
 *.slo
 *.lo

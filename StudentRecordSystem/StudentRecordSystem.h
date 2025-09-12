@@ -1,9 +1,9 @@
 #pragma once
 
-
 #include <iostream>
-
 #include"RecordManager.h"
+
+
 
 using namespace std;
 
@@ -16,7 +16,11 @@ public:
 
 private:
 
+    RecordManager recordManager;
+
     int inputSelection;
+
+    string RECORD_DIRECTORY = "/Student_Records";
 
     void HomePage();
 

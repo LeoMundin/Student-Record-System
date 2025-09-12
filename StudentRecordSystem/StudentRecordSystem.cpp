@@ -4,10 +4,10 @@
 StudentRecordSystem::StudentRecordSystem() 
 {
 
-    // TODO : Instantiate Record Manager.
 
     // Launch Home Page
     HomePage();
+
 }
 
 
@@ -88,6 +88,7 @@ void StudentRecordSystem::MainMenuPage()
 
     case 1:
         cout << "Creating Report..." << endl;
+        recordManager.CreateRecord();
         break;
 
     case 2:
@@ -99,7 +100,16 @@ void StudentRecordSystem::MainMenuPage()
         break;
 
     case 4:
+
+        int reportRollID;
+
+        cout << "Report Roll ID Number : " << endl;
+        cin >> reportRollID;
         cout << "Viewing Report..." << endl;
+        // TO-DO : Implement page to accept a specific roll id as input.
+
+        cout << recordManager.GetRecord(reportRollID).dump(4) << "\n";
+        Sleep(1000);
         break;
 
     case 5:
@@ -112,6 +122,7 @@ void StudentRecordSystem::MainMenuPage()
 
     case 7:
         cout << "Back To Menu." << endl;
+        HomePage();
         break;
 
     default:
@@ -121,6 +132,7 @@ void StudentRecordSystem::MainMenuPage()
 
     }
 
+    MainMenuPage();
 
 }
 

@@ -2,7 +2,10 @@
 
 #include <iostream>
 #include<fstream>
+#include<windows.h>
+#include <stdexcept>
 #include "json.hpp"
+
 
 using namespace std;
 using json = nlohmann::json;
@@ -12,6 +15,9 @@ class RecordManager
 
 public:
 
+
+	RecordManager(); // Default Constructor
+
 	struct studentRecord
 	{
 		string name;
@@ -19,9 +25,6 @@ public:
 		int rollID;
 		float mathsMark;
 	};
-
-	RecordManager(){} // Default Constructor
-	RecordManager(string fileDirectory);
 
 
 	/// <summary>
@@ -64,12 +67,7 @@ public:
 	/// </summary>
 	/// <param name="rollID">The roll ID number of the desired record</param>
 	/// <returns>Record assiosiated with the ID</returns>
-	string GetRecord(int rollID) 
-	{
-		// GetRecordFromDirectory(int rollID) 
-
-		// Return Record From ID
-	}
+	json GetRecord(int rollID);
 
 	/// <summary>
 	/// Returns the entire contents of the file directory.
@@ -93,25 +91,59 @@ public:
 	}
 
 
-
-
-
 private:
 
 
-
-
-	string FILEDIRECTORY;
+	string FILEDIRECTORY = "Records.json";
 
 	/// <summary>
 	/// Trys to get and return a record from the directory for a given ID number.
 	/// </summary>
 	/// <param name="rollID">The roll ID number for the chosen record.</param>
 	/// <returns>Record Assosiated With ID if it exists</returns>
-	string GetRecordFromDirectory(int rollID) 
-	{
-		// Try Get Record
-	}
+	//string GetRecordFromDirectory(int rollID) 
+	//{
+	//	// Try Get Record
+	//}
 
 
 };
+
+#pragma region JSON <-> C++ Object Converter.
+namespace nlohmann
+{
+
+	template<>
+	struct adl_serializer<RecordManager::studentRecord>
+	{
+		static void to_json(json& jasonObject, const RecordManager::studentRecord& recordStruct)
+		{
+			jasonObject = json
+			{
+				{"name",recordStruct.name},
+				{"numberID",recordStruct.numberID},
+				{"rollID",recordStruct.rollID},
+				{"mathsMark",recordStruct.mathsMark}
+			};
+		}
+
+		static void from_json(json& jasonObject, RecordManager::studentRecord& recordStruct)
+		{
+
+			try
+			{
+				recordStruct.name = jasonObject.at("name").get<string>();
+				recordStruct.numberID = jasonObject.at("numberID").get<int>();
+				recordStruct.rollID = jasonObject.at("rollID").get<int>();
+				recordStruct.mathsMark = jasonObject.at("mathsMark").get<float>();
+
+			}
+			catch (const exception& e)
+			{
+				cout << "Invalid JSON Format" << e.what() << endl;
+			}
+		}
+
+	};
+}
+#pragma endregion
